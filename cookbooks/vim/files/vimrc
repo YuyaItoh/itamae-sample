@@ -1,0 +1,35 @@
+"シンタックスハイライト
+syntax on
+
+"対応する括弧を強調
+set showmatch
+"ターミナルのタイトルをセット
+set title
+"インデントを揃える
+set smartindent
+"タブを半角スペースで挿入
+set expandtab
+"タブ幅
+set tabstop=4
+">>によるシフト幅
+set shiftwidth=4
+"選択行にラインをいれる
+set cursorline
+"行番号を表示
+set number
+"空白文字（スペース、改行）の可視化
+set list
+"空白文字の表示形式
+set listchars=tab:>-,trail:_,eol:↲,extends:>,precedes:<,nbsp:%
+"viコマンドの履歴を保持
+set history=1000
+"検索語句の強調
+set hlsearch
+"検索の大文字小文字を区別しない
+set ignorecase
+"小文字のときのみ区別しない（ignorecaseが必要）
+set smartcase
+
+"コメントの色の変更
+hi Comment ctermfg=lightblue
+

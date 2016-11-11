@@ -1,0 +1,7 @@
+# 各レシピにおける設定
+vim:
+    user: vagrant
+    home: /home/vagrant
+tmux:
+    user: vagrant
+    home: /home/vagrant
