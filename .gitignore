@@ -1,0 +1,21 @@
+#ignore bundler config.
+/.bundle
+/vendor/bundler
+
+# Ignore all logfiles and tempfiles.
+/log/*
+!/log/.keep
+/tmp
+
+# Ignore rbenv
+.ruby-version
+
+# Ignore other unneeded files.
+doc/
+*.swp
+*~
+.project
+.DS_Store
+.idea
+.secret
+
