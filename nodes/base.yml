@@ -1,7 +1,14 @@
+# ********************************************
 # 各レシピにおける設定
+# ********************************************
 vim:
-    user: vagrant
-    home: /home/vagrant
+  user: vagrant
+  home: /home/vagrant
 tmux:
-    user: vagrant
-    home: /home/vagrant
+  version: 2.1
+  user: vagrant
+  home: /home/vagrant
+anyenv:
+  install_versions:
+    - rbenv:
+      - 2.3.1
