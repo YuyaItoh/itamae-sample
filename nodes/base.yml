@@ -9,6 +9,11 @@ tmux:
   user: vagrant
   home: /home/vagrant
 anyenv:
+  # cookbooks/anyenvで利用
+  anyenv_root: /usr/local/anyenv
+  global:
+    rbenv: 2.3.1
+  # itamae-plugin-recipe-anyenvで利用
   install_versions:
     - rbenv:
       - 2.3.1

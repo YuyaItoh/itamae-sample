@@ -19,9 +19,10 @@ package "ncurses-devel"
 
 ## 共通
 # /etc/profileにパスを追記する
+anyenv_root = node[:anyenv][:anyenv_root]
 msg = <<"EOS"
 ### Anyenv ###
-export ANYENV_ROOT="/usr/local/anyenv"
+export ANYENV_ROOT="#{anyenv_root}"
 export PATH="${ANYENV_ROOT}/bin:$PATH"
 eval "$(anyenv init -)"
 EOS
@@ -33,3 +34,6 @@ end
 
 # システムにanyenvをインストール
 include_recipe "anyenv::system"
+
+# rbenvの設定
+execute "sudo -i rbenv global #{node[:anyenv][:global][:rbenv]}"
